@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import SingleCard from "./components/SingleCard";
+import { Analytics } from "@vercel/analytics/react";
 
 interface Card {
   src: string;
@@ -73,6 +74,7 @@ function App() {
 
   return (
     <div>
+      <Analytics />
       <a href="https://github.com/volt-l18/memory-game-react" target="_blank">
         <svg
           width="50"
